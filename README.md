@@ -23,8 +23,8 @@ Usage of opcua_exporter:
     	OPC UA Endpoint to connect to. (default "opc.tcp://localhost:4096")
   -max-timeouts int
     	The exporter will quit trying after this many read timeouts (0 to disable).
-  -port int
-    	Port to publish metrics on. (default 9686)
+  -bind string
+    	Address and port to publish metrics on. (default ":9686")
   -prom-prefix string
     	Prefix will be appended to emitted prometheus metrics
   -read-timeout duration
